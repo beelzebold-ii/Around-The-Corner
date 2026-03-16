@@ -5,6 +5,8 @@
 require("lua.assets")
 require("lua.datatypes")
 require("lua.level")
+require("lua.load")
+require("lua.controls")
 
 -- even realer shit here
 -- just core loops which will refer to external functions for the sake of cleanliness
@@ -31,10 +33,10 @@ function love.load(args)
 	end
 
 function love.update(dt)
-	
+	UpdateControls()
 	end
 
 function love.draw()
 	love.graphics.print("hello world! " .. love.timer.getFPS(),400,300)
-	level.DrawLevel(Vector2(0,0))
+	level.DrawLevel(camera)
 	end

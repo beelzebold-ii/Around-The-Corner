@@ -109,6 +109,8 @@ function level.DrawLevel(camera)
 			end
 		end
 	-- end tilemap iteration
+	love.graphics.origin()
+	
 	love.graphics.setCanvas()
 	love.graphics.draw(canv_floortile,0,0,0,2)
 	love.graphics.draw(canv_walls,0,0,0,2)

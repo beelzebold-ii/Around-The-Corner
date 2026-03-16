@@ -17,6 +17,10 @@ tile = {
 	white_wall_s 	= love.graphics.newImage("graphics/tilesets/white_wall_s.png"),
 	white_wall_e 	= love.graphics.newImage("graphics/tilesets/white_wall_e.png"),
 	white_wall_se 	= love.graphics.newImage("graphics/tilesets/white_wall_se.png"),
+	
+	door1_wall_s 	= love.graphics.newImage("graphics/tilesets/door1_wall_s.png"),
+	door1_wall_e 	= love.graphics.newImage("graphics/tilesets/door1_wall_e.png"),
+	door1_wall_se 	= love.graphics.newImage("graphics/tilesets/door1_wall_se.png"),
 }
 
 -- tilesets
@@ -35,6 +39,15 @@ tileset = {
 		s 		= tile.white_wall_s,
 		e 		= tile.white_wall_e,
 		se 		= tile.white_wall_se,
+		n		= tile.wall_n,
+		w		= tile.wall_w,
+		nw		= tile.wall_nw
+	},
+	door1 = {
+		tile 	= tile.white_tile,
+		s 		= tile.door1_wall_s,
+		e 		= tile.door1_wall_e,
+		se 		= tile.door1_wall_se,
 		n		= tile.wall_n,
 		w		= tile.wall_w,
 		nw		= tile.wall_nw
